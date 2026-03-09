@@ -5,23 +5,31 @@ A modern 3D animation–driven web experience built with Next.js, React, and Fra
 
 This project explores bringing cinematic 3D sequences and rich UI animations to the web using a clean, scalable frontend architecture.
 ![alt text](RedME.png)
-✨ Features
 
-🌀 High-quality 3D animation sequences
 
-⚡ Next.js App Router for fast routing and rendering
 
-🎬 Framer Motion for smooth, expressive animations
 
-🎨 Tailwind CSS for rapid, consistent styling
+# 📷 Screenshots
 
-🧠 TypeScript for type safety and maintainability
 
-🧩 Reusable component architecture
+ ![alt text](public/orderimage.png) 
+ ![alt text](public/menusection.png) 
+![ExclusiveOffersSection](public/ExclusiveOffersSection.png)
 
-🚀 Optimized for performance and modern browsers
 
-🛠 Admin & Asset Management
+---
+
+## ✨ Features
+
+- 🌀 High-quality 3D animation sequences  
+- ⚡ Next.js App Router for fast routing and rendering  
+- 🎬 Framer Motion for smooth, expressive animations  
+- 🎨 Tailwind CSS for rapid, consistent styling  
+- 🧠 TypeScript for type safety and maintainability  
+- 🧩 Reusable component architecture  
+- 🚀 Optimized for performance and modern browsers  
+
+---
 
 Modern admin dashboard for real-time asset curation and management.
 - **Asset Curation**: Integrated upload widget for new promotional offers.
@@ -67,70 +75,58 @@ ProjectPrompts/
 ```
 
 
-
-🚀 Getting Started
-Install dependencies
-
-`npm install`
-# or
-`yarn install`
-# or
-`pnpm install`
-# or
-`bun install`
-
-Run the development server
-`npm run dev`
-# or
-`yarn dev`
-# or
-`pnpm dev`
-# or
-`bun dev`
-
-
-Open 👉 http://localhost:3000
-
-🏗 Build for Production
-npm run build
-npm run start
-
-
-This builds the app and runs the optimized production server.
-
-🔍 Linting & Code Quality
-npm run lint
-
-
 Ensures consistent formatting, best practices, and clean TypeScript usage.
 
-🎞 Animation Notes
+## 🎞 Animation Notes
 
-Image sequences are stored in public/sequence/
+* Image sequences stored in `public/sequence/`
+* Animations orchestrated using **Framer Motion**
+* Designed to support future **WebGL / Three.js** extensions
 
-Animations are orchestrated using Framer Motion
+---
 
-The project is structured to support future WebGL / Three.js extensions if needed
+## 🧠 Project Goals
 
-🧠 Project Goals
+* Showcase immersive 3D motion on the web
+* Maintain clean, readable, and scalable codebase
+* Push visual storytelling using modern frontend tools
 
-Showcase immersive 3D motion on the web
+---
+## 🌍 Development Branches
 
-Maintain clean, readable, and scalable code
+Live development versions of the project are available here:
+🔗 [Main Website](https://radwanfried.vercel.app/)
 
-Push visual storytelling using modern frontend tools
-
-🌍 Development Branches
-
-Live development versions of the project can be found here:
-
+---
 # Videos Used
+<!-- <p>
 <video controls src="vid1.mp4" title="Title"></video>
 <video controls src="Vide2.mp4" title="Title"></video>
+</p> -->
 
+<div style="display: flex; gap: 20px;">
+  <div style="flex: 1; border: 1px solid #7c7c7c; padding: 5px;">
+    <video controls src="vid1.mp4" style="width: 100%;"></video>
+    <p style="text-align: center;">Box Explosion</p>
+  </div>
+  <div style="flex: 1; border: 1px solid #7c7c7c; padding: 5px;">
+    <video controls src="Vide2.mp4" style="width: 100%;"></video>
+    <p style="text-align: center;">Fried Rotation</p>
+  </div>
 
+</div>
 
+---
+---
 
 Main Website: 🔗 [Main Website](https://radwanfried.vercel.app/)
 
 Development Branch 2: 🔗 [MultiVideo Branch](https://radwanfried.vercel.app/)
+---
+
+Made with ❤️ using Interactive Ui.
+
+```
+
+If you want, I can also generate a simplified version or add sections like Contribution Guidelines or FAQ.
+```
