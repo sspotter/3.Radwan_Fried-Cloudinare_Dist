@@ -1,5 +1,5 @@
 🎨 3D Radwan Animation
-: 🔗 [Radwan Link](https:/radwanfried.vercel.app)
+: 🔗 [Radwan Link](https://radwanfried.vercel.app/)
 
 A modern 3D animation–driven web experience built with Next.js, React, and Framer Motion, focused on smooth visuals, interactive motion, and high-performance rendering.
 
@@ -131,6 +131,6 @@ Live development versions of the project can be found here:
 
 
 
-Main Website: 🔗 [Main Website](https:/radwanfried.vercel.app)
+Main Website: 🔗 [Main Website](https://radwanfried.vercel.app/)
 
-Development Branch 2: 🔗 [MultiVideo Branch](https:/radwanfried.vercel.app)
+Development Branch 2: 🔗 [MultiVideo Branch](https://radwanfried.vercel.app/)
