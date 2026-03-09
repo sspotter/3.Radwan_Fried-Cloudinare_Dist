@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --fried-gold: #D4AF37;
+  --steam-white: #f5f5f5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold: var(--fried-gold);
+  --color-steam: var(--steam-white);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased overflow-x-hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+@layer components {
+  .catalog-heading {
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+    color: var(--fried-gold);
+    letter-spacing: -0.02em;
+  }
+
+  .premium-card {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .premium-card:hover {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+    transform: translateY(-4px);
+  }
+
+  .btn-pill {
+    border-radius: 9999px;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  .btn-gold {
+    background-color: var(--fried-gold);
+    color: black;
+  }
+
+  .btn-gold:hover {
+    background-color: #b39527;
+  }
+
+  .premium-label {
+    background-color: #3c3c3c;
+    color: #767676;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: 400;
+  }
+}

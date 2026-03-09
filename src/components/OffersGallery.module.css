@@ -1,0 +1,234 @@
+.galleryContainer {
+  margin: 6rem 0;
+  text-align: center;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  color: var(--fried-gold);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -2px;
+}
+.gridContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+.viewPort {
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+.fixedGridContainer {
+  width: 100%;
+}
+.fixedGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  width: 100%;
+}
+.carouselMode {
+  position: relative;
+}
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--fried-gold);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.carouselMode:hover .navBtn {
+  opacity: 1;
+}
+.navBtn:hover {
+  background: var(--fried-gold);
+  color: #000;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+.prevBtn {
+  left: 1rem;
+}
+.nextBtn {
+  right: 1rem;
+}
+.carouselTrack {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+}
+.thumbWrapper {
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  width: 300px;
+  flex-shrink: 0;
+}
+.thumbWrapper.singleItem {
+  width: 400px;
+  max-width: 90vw;
+}
+.thumbWrapper:hover {
+  transform: translateY(-10px);
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+.imageContainer {
+  position: relative;
+  aspect-ratio: 4/5;
+}
+.thumbnail {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+.thumbWrapper:hover .thumbnail {
+  transform: scale(1.1);
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  opacity: 1;
+}
+.thumbTitle {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+}
+.priceTag {
+  background: var(--fried-gold);
+  color: #000;
+  padding: 0.2rem 0.8rem;
+  border-radius: 99px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+}
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  padding: 2rem;
+}
+.modalContent {
+  background: #0a0a0a;
+  border-radius: 24px;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 100px rgba(0,0,0,0.8);
+}
+.modalLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+  .modalLayout {
+    grid-template-columns: 1fr;
+  }
+}
+.modalImageWrapper {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enlarged {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+}
+.modalInfo {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.premiumLabel {
+  color: var(--fried-gold);
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+.infoTitle {
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  color: #fff;
+}
+.infoPrice {
+  font-size: 1.8rem;
+  color: var(--fried-gold);
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.infoDescription {
+  color: #767676;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+.closeBtn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 99px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: fit-content;
+}
+.closeBtn:hover {
+  background: var(--fried-gold);
+  transform: scale(1.05);
+}

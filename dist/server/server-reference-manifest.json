@@ -1,0 +1,81 @@
+{
+  "node": {
+    "40461aea68b514e67a920f3387c3047f2110a52793": {
+      "workers": {
+        "app/admin/offers/page": {
+          "moduleId": 90871,
+          "async": false,
+          "exportedName": "getUploadSignature",
+          "filename": "Backend/app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/offers/page": "action-browser"
+      },
+      "filename": "Backend/app/actions.ts",
+      "exportedName": "getUploadSignature"
+    },
+    "60e4ecd8c63b0232b70ec658d668656c0ad1ac5956": {
+      "workers": {
+        "app/admin/offers/page": {
+          "moduleId": 90871,
+          "async": false,
+          "exportedName": "deleteImage",
+          "filename": "Backend/app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/offers/page": "action-browser"
+      },
+      "filename": "Backend/app/actions.ts",
+      "exportedName": "deleteImage"
+    },
+    "70e3f0011a05aecf47223a735c1e3ba9b4a4d335f6": {
+      "workers": {
+        "app/admin/offers/page": {
+          "moduleId": 90871,
+          "async": false,
+          "exportedName": "updateImageMetadata",
+          "filename": "Backend/app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/offers/page": "action-browser"
+      },
+      "filename": "Backend/app/actions.ts",
+      "exportedName": "updateImageMetadata"
+    },
+    "7041cd840afe7e6f0e06e1e66311f0b390cec391c4": {
+      "workers": {
+        "app/admin/offers/page": {
+          "moduleId": 90871,
+          "async": false,
+          "exportedName": "getImages",
+          "filename": "Backend/app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/offers/page": "action-browser"
+      },
+      "filename": "Backend/app/actions.ts",
+      "exportedName": "getImages"
+    },
+    "402b841f23bfa096bf8a60da03a6e4c1a50ed94b39": {
+      "workers": {
+        "app/admin/offers/page": {
+          "moduleId": 90871,
+          "async": false,
+          "exportedName": "getFolders",
+          "filename": "Backend/app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/offers/page": "action-browser"
+      },
+      "filename": "Backend/app/actions.ts",
+      "exportedName": "getFolders"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "0orI6Zo80471FG/OqWPaJXKreZaPEHAf5B6FXVUfMnU="
+}
