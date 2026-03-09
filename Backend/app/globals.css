@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg: #0a0a0a;
+    --color-primary: #ffffff;
+    --color-accent: #c8a72c;
+    --color-secondary-bg: #1c1c1c;
+    --color-label-bg: #3c3c3c;
+    --color-label-text: #767676;
+    --button-green-bg: #21b54b;
+    --button-gold-bg: #c8a72c;
+    --font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    font-family: var(--font-family);
+    margin: 0;
+  }
+}
+
+@layer components {
+  .catalog-heading {
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+    color: var(--color-accent);
+    letter-spacing: -0.02em;
+  }
+
+  .premium-card {
+    background-color: var(--color-secondary-bg);
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .premium-card:hover {
+    box-shadow: 0 0 20px rgba(200, 167, 44, 0.1);
+    transform: translateY(-4px);
+  }
+
+  .btn-pill {
+    border-radius: 9999px;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  .btn-whatsapp {
+    background-color: var(--button-green-bg);
+    color: white;
+  }
+
+  .btn-whatsapp:hover {
+    background-color: #1e9d41;
+  }
+
+  .btn-gold {
+    background-color: var(--button-gold-bg);
+    color: black;
+  }
+
+  .btn-gold:hover {
+    background-color: #b39527;
+  }
+
+  .btn-add {
+    background-color: white;
+    color: black;
+  }
+
+  .btn-add:hover {
+    background-color: #f3f3f3;
+  }
+
+  .premium-label {
+    background-color: var(--color-label-bg);
+    color: var(--color-label-text);
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: 400;
+  }
+}
+
+/* Custom fonts import via Tailwind or Head - adding link to Page */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2) format('woff2');
+}

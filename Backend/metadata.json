@@ -1,0 +1,5 @@
+{
+  "name": "Cloudinary Gallery Manager",
+  "description": "Admin dashboard to upload and manage images, with a public user gallery.",
+  "requestFramePermissions": []
+}
